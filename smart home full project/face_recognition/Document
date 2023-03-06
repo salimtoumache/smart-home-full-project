@@ -1,0 +1,34 @@
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+يتم التحكم في معظم الأبواب بواسطة اشخاص يستخدمون مفاتيح او بطاقات امان او كلمة مرور أو اي نمط اخر  لفتح الباب .
+في هذا المشروع قمت بمساعدة المستخدمين على تحسين امان الباب في المواقع الحساسة,  باستخدام تقنيات الذكاء الاصطناعي في  اكتشاف الوجه والتعرف عليه.
+يمكن تخزين صور الوجه للمستحدمين  في قاعدة البيانات
+يتكون هذا النظام بشكل أساسي من ثلاثة أنظمة فرعية :
+    1) الكشف والتعرف على الوجه : في هده المرحلة يتم الكشف  عن منطقة الوجه في الصورة إذا تم التعرف على الوجه فسوف يرجع قيمة true الى  المتغير الي نحفظ فيه النتائج اما اذا كان الوجه مجهول فينسب اليه قيمة false
+    2) ارسال البيانات الى المتحكم الدقيق  : بعد معالجة البيانات والتعرف على اما كان الوجه معروف او لا نقوم بارسال اشارة الى المتحكم الدقيق من المنفد التسلسلي  عن طريق مكتبة pyserial 
+ في الحالة الاولى اد كان الوجه معروف نقوم بارسال ON وفي الحالة الثانية اد كان الوجه غير معروف او لم يكن وجه في الصورة نقوم بارسال OFF 
+    3) استقبال البيانات في المتحكم الدقيق وفتح الباب او اغلاقه :
+ يتم قراءة البيانات التي ارسلت من المنفد التسلسلي في المتحكم الدقيق 
+  ادا كانت  ON سوف يامر بفتح الباب واشتعال الضوء الاخضر , اما ادا كانت OFF  يشتعل الضوء الاحمر وعدم فتح الباب 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Most doors are controlled by people who use keys, security cards, a password, or any other pattern to open the door.
+In this project, I helped users improve door security in sensitive locations, using artificial intelligence techniques in face detection and recognition.
+Users' facial images can be stored in the database
+This system mainly consists of three subsystems:
+    1) Face detection and recognition: At this stage, the face area in the image is detected. If the face is recognized, the value of true will be returned to the variable in which we save the results. But if the face is unknown, the value of false is attributed to it.
+    2) Sending data to the microcontroller: After processing the data and identifying whether the face is known or not, we send a signal to the microcontroller from the serial port through the pyserial library
+ In the first case, if the face is known, we send ON, and in the second case, if the face is unknown or there is no face in the picture, we send OFF.
+    3) Receiving data in the microcontroller and opening or closing the door:
+ The data sent from the serial port is read into the microcontroller
+  If it is ON, it will command the door to be opened and the green light will turn on, but if it is OFF, the red light will turn on and the door will not be opened.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+La plupart des portes sont contrôlées par des personnes qui utilisent des clés, des cartes de sécurité, un mot de passe ou tout autre schéma pour ouvrir la porte.
+Dans ce projet, j'ai aidé les utilisateurs à améliorer la sécurité des portes dans des endroits sensibles, en utilisant des techniques d'intelligence artificielle dans la détection et la reconnaissance des visages.
+Les images faciales des utilisateurs peuvent être stockées dans la base de données
+Ce système se compose principalement de trois sous-systèmes :
+    1) Détection et reconnaissance des visages : à ce stade, la zone du visage dans l'image est détectée. Si le visage est reconnu, la valeur de true sera renvoyée à la variable dans laquelle nous enregistrons les résultats. Mais si le visage est inconnu, la valeur de faux lui est attribuée.
+    2) Envoi de données au microcontrôleur : après avoir traité les données et identifié si le visage est connu ou non, nous envoyons un signal au microcontrôleur depuis le port série via la bibliothèque pyserial
+ Dans le premier cas, si le visage est connu, on envoie ON, et dans le second cas, si le visage est inconnu ou s'il n'y a pas de visage sur la photo, on envoie OFF.
+    3) Réception des données dans le microcontrôleur et ouverture ou fermeture de la porte :
+ Les données envoyées depuis le port série sont lues dans le microcontrôleur
+  S'il est allumé, il commandera l'ouverture de la porte et le voyant vert s'allumera, mais s'il est éteint, le voyant rouge s'allumera et la porte ne s'ouvrira pas.
