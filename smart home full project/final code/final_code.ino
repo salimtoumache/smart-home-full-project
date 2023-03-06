@@ -5,6 +5,8 @@
      ALSO INTEGRATED  WITH ARTIFICIAL NEURAL NETWORKS MODEL FOR FACE RECOGNITION
      USING TENSORFLOW WITH CNN ALGORITHM
      ESP32 IS MAIN CONTROLLER IN IOT
+                                                      SALIM TOUMACHE 
+                                                  salimtoumache@gmail.com
      _________________________________________________________________________________
      Sensor And Devices Are Use
            Esp32 board
@@ -16,14 +18,14 @@
 */
 // 1) wifi -------------------------------------------------------------------------
 #include <WiFi.h>
-#define WIFI_SSID "DJAWEB_7998"
-#define WIFI_PASSWORD "azerty2021"
+#define WIFI_SSID "xxxxx"
+#define WIFI_PASSWORD "xxxxx"
 // 2) BD -------------------------------------------------------------------------
 #include <Firebase_ESP_Client.h>
 #include "addons/TokenHelper.h"
 #include "addons/RTDBHelper.h"
-#define API_KEY "AIzaSyBLSfcatzXcg3ownF02NB68CfT96Zw_kkU"
-#define DATABASE_URL "https://control-led-442d0-default-rtdb.firebaseio.com/"
+#define API_KEY "xxxxx"
+#define DATABASE_URL "xxxxx"
 FirebaseData fbdo;
 FirebaseAuth auth;
 FirebaseConfig config;
